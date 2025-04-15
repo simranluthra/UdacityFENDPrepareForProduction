@@ -4,12 +4,12 @@ import mocha from 'gulp-mocha';
 
 // Task to build and serve the project using Parcel
 gulp.task('parcel-build', gulpShell.task([
-  'parcel build index.html --dist-dir dist --public-url ./',
+  'npx parcel build index.html --dist-dir dist --public-url ./',
 ]));
 
 // Task to serve the project using Parcel
 gulp.task('parcel-serve', gulpShell.task([
-  'parcel serve index.html --open',
+  'npx parcel serve index.html --open',
 ]));
 
 // Default task: run the build task and then serve the project
